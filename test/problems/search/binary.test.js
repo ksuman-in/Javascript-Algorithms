@@ -1,1 +1,3 @@
-test("Binar search", () => {});
+test("Binar search", () => {
+  "";
+});
