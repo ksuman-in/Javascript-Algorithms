@@ -1,11 +1,3 @@
-// function fabonacci(n){
-//     const fab = [0,1];
-//     for(let i = 2; i<=n; i++) {
-//         fab[i] = fab[i-1]+fab[i-2];
-//     }
-//     return fab;
-// }
-
 // function factorial(n) {
 //     if(n>1){
 //         return n*factorial(n-1);

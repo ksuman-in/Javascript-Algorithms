@@ -1,0 +1,1 @@
+test("Binar search", () => {});
