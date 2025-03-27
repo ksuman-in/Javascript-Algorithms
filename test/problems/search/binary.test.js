@@ -1,3 +1,3 @@
-test("Binar search", () => {
+test("Binary search", () => {
   "";
 });

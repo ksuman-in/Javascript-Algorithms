@@ -1,7 +1,8 @@
-function flatArray(arr, result = []) {
+function flatArray(arr) {
+  let result = [];
   arr.forEach((element) => {
     if (typeof element === "object") {
-      return flatArray(element, result);
+      result.push(...flatArray(element));
     } else {
       result.push(element);
     }

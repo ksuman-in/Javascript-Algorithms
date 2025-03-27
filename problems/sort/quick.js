@@ -20,3 +20,4 @@ function quick(array) {
 
 console.log(quick([10, 2, 11, 4, 3, 5, -10, 8]));
 console.log(quick([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]));
+console.log(quick([22, 12, 8, 20, -2, 6, 4]));
