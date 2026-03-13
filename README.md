@@ -1,98 +1,102 @@
 # Javascript-Algorithms
 
-A collection of JavaScript implementations for classic algorithms and data structures, including solutions to popular coding problems from platforms like LeetCode.
+A collection of JavaScript implementations of classic algorithms, data structures, and coding challenge solutions.
 
-## Project Structure
+## 🚀 Quick Start
+
+```sh
+# Install dependencies
+npm install
+
+# Run all tests
+npm test
+
+# Run a specific algorithm
+node problems/recursive/subsequence.js
+```
+
+## 📁 Project Structure
 
 ```
 Javascript-Algorithms/
 ├── index.js
+├── package.json
+├── README.md
 ├── problems/
-│   ├── sort/
-│   │   ├── bubble.js
-│   │   ├── insertion.js
-│   │   ├── merge.js
-│   │   └── quick.js
-│   ├── search/
-│   │   ├── linear.js
-│   │   └── binary.js
-│   ├── queue/
-│   │   ├── queue-array.js
-│   │   └── queue-object.js
-│   ├── recurciveFabonacci.js
+│   ├── leetcode/              # LeetCode-style challenge solutions
+│   │   ├── array-string/
+│   │   ├── easy/
+│   │   └── ...
+│   ├── queue/                 # Queue implementations
+│   ├── recursive/             # Recursion practice problems
+│   ├── search/                # Search algorithms
+│   ├── sort/                  # Sorting algorithms
 │   ├── flatArray.js
 │   ├── powerOfTwo.js
-│   └── leetcode/
-│       ├── easy/
-│       │   ├── twoSum.js
-│       │   ├── houseRobber.js
-│       │   ├── maximumSubArray.js
-│       │   ├── mergeTwoSortedLinklist.js
-│       │   ├── twoSumSortedArray.js
-│       │   └── anagram.js
-│       ├── array-string/
-│       │   ├── closestToZero.js
-│       │   ├── isSubSequence.js
-│       │   └── mergeStringAlternative.js
-│       ├── largestKthSum.js
-│       ├── longestStringPrefix.js
-│       ├── middleValue.js
-│       ├── palindrom.js
-│       └── productExceptSelf.js
-├── test/
-│   ├── problems/
-│   │   ├── flatArray.test.js
-│   │   └── recurciveFabonacci.test.js
-│   └── search/
-│       ├── linear.test.js
-│       └── binary.test.js
-├── README.md
-└── package.json
+│   └── ...
+└── test/                      # Automated tests
+    ├── problems/
+    └── search/
 ```
 
-## Getting Started
+> Note: Some files and folders may be added over time as new problems are solved.
 
-1. **Install dependencies:**
-   ```sh
-   npm install
-   ```
+## ✅ Included Algorithms & Problems
 
-2. **Run tests:**
-   ```sh
-   npm test
-   ```
+### Sorting
+- Bubble Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
 
-3. **Run an algorithm file:**
-   ```sh
-   node problems/sort/quick.js
-   ```
+### Searching
+- Linear Search
+- Binary Search
 
-## Algorithms Included
+### Data Structures
+- Queue (array-based)
+- Queue (object-based)
 
-- **Sorting:** Bubble, Insertion, Merge, Quick
-- **Searching:** Linear, Binary (iterative & recursive)
-- **Data Structures:** Queue (array/object)
-- **Recursion:** Fibonacci, Flat Array
-- **LeetCode Problems:** Two Sum, House Robber, Maximum Subarray, Anagram, Merge Two Sorted Lists, Product Except Self, etc.
+### Recursion
+- Fibonacci
+- Subsequence generation
+- Subset combination / power set
+- Permutations
+- Flatten nested arrays
+- Power of two check
 
-## Example Usage
+### LeetCode-style Problems
+- Two Sum
+- House Robber
+- Maximum Subarray
+- Merge Two Sorted Lists
+- Product Except Self
+- ...and more (see `problems/leetcode`)
 
-```js
-// Bubble Sort
-const bubbleSort = require('./problems/sort/bubble');
-console.log(bubbleSort([5, 2, 9, 1, 5, 6]));
+## 🧪 Running Tests
 
-// Queue Example
-const Queue = require('./problems/queue/queue-array');
-const queue = new Queue();
-queue.enqueue(10);
-queue.enqueue(20);
-console.log(queue.dequeue()); // 10
+This repo uses [Jest](https://jestjs.io/) for testing.
+
+```sh
+npm test
 ```
 
-## Contributing
+## ✨ Adding a New Problem
 
-Pull requests are welcome! Feel free to submit new algorithms or improvements.
+1. Add your implementation file under `problems/` (or an appropriate subfolder).
+2. Write a matching test under `test/`.
+3. Ensure the test passes:
+
+```sh
+npm test
+```
+
+## 📌 Notes
+
+- Files in `problems/` are mostly standalone; they can typically be run directly with Node.
+- Feel free to refactor existing solutions or add additional comments / edge-case handling.
+
+---
 
 ## License
 
